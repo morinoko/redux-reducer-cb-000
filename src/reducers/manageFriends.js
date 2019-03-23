@@ -11,7 +11,7 @@ export function manageFriends(state, action) {
         return friend.id !== action.id;
       });
       
-      return { friends: friends };
+      return { friends: filteredFriends };
     default:
       return state;
   }
