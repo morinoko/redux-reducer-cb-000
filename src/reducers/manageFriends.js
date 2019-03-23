@@ -3,9 +3,13 @@ export function manageFriends(state, action) {
     case "ADD_FRIEND":
       return {
         friends: [...state.friends, action.friend]
-      }
+      };
     case "REMOVE_FRIEND":
+      let friends = [...state.friends];
       
+      friends.map(friend => friend.id !== action.friend.id);
+      
+      return { friends: friends };
     default:
       return state;
   }
