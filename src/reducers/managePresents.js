@@ -1,3 +1,3 @@
 export function managePresents(state, action) {
-  case
+  switch(action)
 }
