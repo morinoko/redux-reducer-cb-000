@@ -7,7 +7,7 @@ export function manageFriends(state, action) {
     case "REMOVE_FRIEND":
       let friends = [...state.friends];
       
-      friends.map(friend => friend.id !== action.friend.id);
+      friends = friends.map(friend => friend.id !== action.friend.id);
       
       return { friends: friends };
     default:
