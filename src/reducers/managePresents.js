@@ -3,6 +3,6 @@ export function managePresents(state, action) {
     case: "INCREASE":
       return { }
     default:
-      return state
+      return state;
   }
 }
